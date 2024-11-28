@@ -58,12 +58,12 @@ Sparse Datasets: While ElasticNet is designed for sparse datasets, extremely hig
 Before running the code, ensure you have Python installed (preferably version 3.8 or higher) and the following dependencies installed:
 
 NumPy
-Pandas (if used for preprocessing)
+Pandas 
 SciPy
 
 ### Prepare Your Dataset
+Make sure to change the name from "small_test.csv" to your local data set name.
 Make sure your dataset is in a suitable format:
-
 Features (X): A 2D array or DataFrame where rows are samples, and columns are features.
 Target (y): A 1D array or Series representing the target variable.
 ###Initialize the ElasticNet Model
