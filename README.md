@@ -66,3 +66,18 @@ Make sure your dataset is in a suitable format:
 
 Features (X): A 2D array or DataFrame where rows are samples, and columns are features.
 Target (y): A 1D array or Series representing the target variable.
+###Initialize the ElasticNet Model
+Create an instance of the ElasticNet class, specifying parameters like alpha, l1_ratio, learning_rate, and max_iterations:
+model = ElasticNet(alpha=0.01, l1_ratio=0.6, learning_rate=0.1, max_iterations=2000)
+### Tune Parameters
+Experiment with different values for the following parameters to optimize performance:
+
+alpha: Regularization strength.
+l1_ratio: The balance between L1 and L2 penalties.
+learning_rate: Controls the speed of convergence.
+max_iterations: Number of iterations for gradient descent.
+### Use Custom Data
+If you have your own dataset, replace X and y with your features and target variable. Ensure proper preprocessing like handling missing values or scaling features if needed.
+### Results:
+<img width="1468" alt="Screenshot 2024-11-28 at 1 10 27 AM" src="https://github.com/user-attachments/assets/0929aec6-33e1-4001-9e74-9cd6b0a7b3ac">
+
