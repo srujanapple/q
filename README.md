@@ -69,6 +69,7 @@ Target (y): A 1D array or Series representing the target variable.
 ###Initialize the ElasticNet Model
 Create an instance of the ElasticNet class, specifying parameters like alpha, l1_ratio, learning_rate, and max_iterations:
 model = ElasticNet(alpha=0.01, l1_ratio=0.6, learning_rate=0.1, max_iterations=2000)
+
 ### Tune Parameters
 Experiment with different values for the following parameters to optimize performance:
 
@@ -76,11 +77,14 @@ alpha: Regularization strength.
 l1_ratio: The balance between L1 and L2 penalties.
 learning_rate: Controls the speed of convergence.
 max_iterations: Number of iterations for gradient descent.
+
 ### Use Custom Data
 If you have your own dataset, replace X and y with your features and target variable. Ensure proper preprocessing like handling missing values or scaling features if needed.
 Make sure to change the name from "small_test.csv" to your local data set name.
+
 ### Results:
 <img width="1468" alt="Screenshot 2024-11-28 at 1 10 27 AM" src="https://github.com/user-attachments/assets/0929aec6-33e1-4001-9e74-9cd6b0a7b3ac">
+
 ### Challenges Faced
 Implementing ElasticNet from Scratch:
 Designing a custom gradient descent algorithm to balance L1 and L2 regularization while ensuring convergence required significant effort. Achieving accurate soft-thresholding for the L1 penalty and integrating it with the L2 penalty was challenging.
