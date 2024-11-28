@@ -81,4 +81,59 @@ If you have your own dataset, replace X and y with your features and target vari
 Make sure to change the name from "small_test.csv" to your local data set name.
 ### Results:
 <img width="1468" alt="Screenshot 2024-11-28 at 1 10 27 AM" src="https://github.com/user-attachments/assets/0929aec6-33e1-4001-9e74-9cd6b0a7b3ac">
+### Challenges Faced
+Implementing ElasticNet from Scratch:
+Designing a custom gradient descent algorithm to balance L1 and L2 regularization while ensuring convergence required significant effort. Achieving accurate soft-thresholding for the L1 penalty and integrating it with the L2 penalty was challenging.
+
+Parameter Tuning:
+Selecting optimal values for hyperparameters like alpha, l1_ratio, learning_rate, and tolerance required extensive experimentation. Without automated tools like GridSearchCV, tuning parameters manually was time-intensive.
+
+Dataset Compatibility:
+Ensuring the implementation could handle diverse datasets, including those with missing values, non-numeric features, or extreme multicollinearity, involved additional preprocessing steps.
+
+Validation and Debugging:
+Testing the model on synthetic and real-world datasets (e.g., California Housing) and debugging discrepancies with scikit-learn's ElasticNet outputs required careful comparisons and fine-tuning.
+
+Performance Optimization:
+Iterating through a large number of data points and features during gradient descent caused computational overhead. Optimizing the implementation for efficiency while maintaining accuracy was a critical challenge.
+
+Future Work
+Limitations
+Scalability:
+The current implementation uses basic Python libraries like NumPy and is not optimized for very large datasets. For datasets with millions of rows or thousands of features, the execution time could be significantly higher compared to libraries like scikit-learn.
+
+Non-Linearity:
+The model assumes a linear relationship between features and the target variable. Non-linear relationships cannot be effectively modeled without additional feature transformations or kernel-based methods.
+
+Sparse Datasets:
+Although ElasticNet is designed for sparse datasets, handling extremely sparse or imbalanced datasets may require further preprocessing, such as imputation, normalization, or sampling techniques.
+
+No Automated Parameter Tuning:
+The implementation lacks features like cross-validation or grid search for automated hyperparameter tuning, which are commonly used to optimize performance.
+
+### Future Work
+Performance Optimization:
+Enhance the computational efficiency by parallelizing gradient descent or leveraging GPU-based computation using libraries like CuPy or TensorFlow.
+
+Expand Dataset Compatibility:
+Add support for datasets with categorical variables through automated encoding techniques and preprocessing pipelines.
+
+Hyperparameter Tuning:
+Integrate automated hyperparameter tuning methods like grid search or random search to streamline experimentation.
+
+Non-Linear Extensions:
+Introduce polynomial features or kernel methods to capture non-linear relationships in the data.
+
+Robustness Testing:
+Conduct extensive tests with more diverse datasets, including high-dimensional, sparse, or noisy data, to further validate the model's effectiveness.
+
+Visualization Enhancements:
+Improve visualizations by including residual plots, regularization path plots, and feature importance rankings for better interpretability.
+
+### Conclusion
+The ElasticNet regression model implemented in this project demonstrates the ability to combine L1 and L2 regularization effectively, balancing feature selection and coefficient shrinkage. By building the model from scratch, we gained deeper insights into the inner workings of gradient descent, regularization, and optimization techniques. The model performed well on the California Housing dataset, producing comparable results to established libraries like scikit-learn.
+
+While the implementation is robust for small to medium-sized datasets, challenges with scalability, non-linearity, and parameter tuning highlight opportunities for future improvements. With additional optimization and feature expansion, this implementation can serve as a solid foundation for more complex machine learning applications.
+
+
 
