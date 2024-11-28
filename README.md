@@ -62,7 +62,7 @@ Pandas
 SciPy
 
 ### Prepare Your Dataset
-Make sure to change the name from "small_test.csv" to your local data set name.
+
 Make sure your dataset is in a suitable format:
 Features (X): A 2D array or DataFrame where rows are samples, and columns are features.
 Target (y): A 1D array or Series representing the target variable.
@@ -78,6 +78,7 @@ learning_rate: Controls the speed of convergence.
 max_iterations: Number of iterations for gradient descent.
 ### Use Custom Data
 If you have your own dataset, replace X and y with your features and target variable. Ensure proper preprocessing like handling missing values or scaling features if needed.
+Make sure to change the name from "small_test.csv" to your local data set name.
 ### Results:
 <img width="1468" alt="Screenshot 2024-11-28 at 1 10 27 AM" src="https://github.com/user-attachments/assets/0929aec6-33e1-4001-9e74-9cd6b0a7b3ac">
 
