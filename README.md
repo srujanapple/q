@@ -54,14 +54,14 @@ Non-Linear Relationships: The model assumes a linear relationship between predic
 Sparse Datasets: While ElasticNet is designed for sparse datasets, extremely high sparsity may require additional preprocessing, such as imputation or dimensionality reduction.
 
 ### Step-by-Step Guide to Use the ElasticNet Implementation:
-# Set Up Your Environment
+#### Set Up Your Environment
 Before running the code, ensure you have Python installed (preferably version 3.8 or higher) and the following dependencies installed:
 
 NumPy
 Pandas (if used for preprocessing)
 SciPy
 
-# Prepare Your Dataset
+#### Prepare Your Dataset
 Make sure your dataset is in a suitable format:
 
 Features (X): A 2D array or DataFrame where rows are samples, and columns are features.
