@@ -47,21 +47,21 @@ learning_rate: Controls the step size for gradient descent. Lower values ensure 
 max_iterations: Number of iterations for gradient descent. Default: 2000.
 tolerance: Determines the stopping condition based on gradient magnitude.
 
-###Known Limitations
+### Known Limitations
 Does the Model Struggle With Certain Inputs?
 Highly Correlated Features: ElasticNet generally handles multicollinearity well, but extreme correlations can still cause instability in coefficient estimates.
 Non-Linear Relationships: The model assumes a linear relationship between predictors and the target. Non-linearity in the data can lead to poor predictions.
 Sparse Datasets: While ElasticNet is designed for sparse datasets, extremely high sparsity may require additional preprocessing, such as imputation or dimensionality reduction.
 
-###Step-by-Step Guide to Use the ElasticNet Implementation:
-#Set Up Your Environment
+### Step-by-Step Guide to Use the ElasticNet Implementation:
+# Set Up Your Environment
 Before running the code, ensure you have Python installed (preferably version 3.8 or higher) and the following dependencies installed:
 
 NumPy
 Pandas (if used for preprocessing)
 SciPy
 
-#Prepare Your Dataset
+# Prepare Your Dataset
 Make sure your dataset is in a suitable format:
 
 Features (X): A 2D array or DataFrame where rows are samples, and columns are features.
